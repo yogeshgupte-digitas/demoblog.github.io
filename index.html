@@ -1,15 +1,498 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website for testing</h1>  
-        <p>This is my new website which is hosted on GitHub Pages!</p>
-    </main>
-  </body>
+
+<!Doctype HTML>
+<html>
+	<head>
+		
+		
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KS6MM58V');</script>
+<!-- End Google Tag Manager -->
+    
+		
+		<title>home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<script type="text/javascript" src="/akash.mishra2.github.io/at1.js"></script>
+		<style>
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+		 width: 100%;
+         margin: 0;
+		`}
+		blockquote
+		{
+			font-size: 15px;
+			text-align: justify;
+		}		
+		</style>
+			
+		<script>
+			var akash = {
+			pageName: "localhostHomepage",
+			prodCat:"Mypage",
+			prodName:"Gym intro",
+			customLinkDetails:"Test"
+			}
+		</script>
+	
+
+		<script type="text/javascript" src="//nexus.ensighten.com/eclerx/Akash/Bootstrap.js"></script> 
+
+		
+		<script>
+			function calculateBmi() 
+			{
+				var weight = document.bmiForm.weight.value
+				var height = document.bmiForm.height.value
+				if(weight > 0 && height > 0){	
+					var finalBmi = weight/(height/100*height/100)
+					document.bmiForm.bmi.value = finalBmi
+				if(finalBmi < 18.5){
+					document.bmiForm.meaning.value = "You are too thin."
+					dataLayer.push({
+					'event':'BMI_Calculated',
+					'BMI_Value':finalBmi,
+					'BMI_Meaning':document.bmiForm.meaning.value	
+				});
+				}
+				if(finalBmi > 18.5 && finalBmi < 25){
+					document.bmiForm.meaning.value = "You are healthy."
+					dataLayer.push({
+					'event':'BMI_Calculated',
+					'BMI_Value':finalBmi,
+					'BMI_Meaning':document.bmiForm.meaning.value	
+				});
+				}
+				if(finalBmi > 25){
+					document.bmiForm.meaning.value = "You are overweight."
+					dataLayer.push({
+					'event':'BMI_Calculated',
+					'BMI_Value':finalBmi,
+					'BMI_Meaning':document.bmiForm.meaning.value	
+				});
+				}
+				}
+				else{
+					alert("Please Fill in everything correctly")
+					dataLayer.push({
+					'event':'BMI_Calculated',
+					'BMI_Value':finalBmi,
+					'BMI_Meaning':document.bmiForm.meaning.value	
+				});
+				}
+				
+				
+			}
+			/*
+			function ct()
+			{
+				s.linkTrackVars="eVar15,prop15,events";
+				s.linkTrackEvents="event23";
+				s.eVar15="akash"; 
+				s.events="event23";
+				s.tl(this,'e','my link'); 
+			}
+			
+			function clt()
+			{
+				s.linkTrackVars="eVar15,prop15,events";
+				s.linkTrackEvents="event23";
+				s.eVar15="akash"; 
+				s.events="event23";
+				s.tl(this,'o','my link'); 
+			}
+			*/
+			
+						
+		</script>	
+		
+		<link rel="icon" type="image/png"
+    href="https://user-images.githubusercontent.com/34577873/43033510-24d8f684-8cd4-11e8-9b07-d22248354f59.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6MM58V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div>
+		<nav class="navbar collapse navbar-collapse">
+			<div class="navbar-header">
+				<img src="img/logo.jpg" style="height:200px; width:1200px; text-align:center;"/>
+			</div>		
+			<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="index.html"><button type="button" class="btn btn-primary btn-lg" onClick="dataLayer.push({
+'event': 'navigationClick',
+'actionType':'main navigation'
+});" >Home</button></a>
+			</div>
+			<div class="btn-group">
+				<a href="services.html"><button type="button" class="btn btn-primary btn-lg">Services</button> </a>
+			</div>
+			<div class="btn-group">
+			<a href="about.html"><button type="button" class="btn btn-primary btn-lg">About us</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="feedback.html"><button type="button" class="btn btn-primary btn-lg">Feedback</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+			</div> 
+			</div>								
+		</nav>	
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+	<br/><br/>
+    <div class="carousel-inner" role="listbox" style="margin-top:-40px">
+      <div class="item active">
+        <img src="img/gymsli1.jpg" alt=""  >
+      </div>
+
+      <div class="item">
+        <img src="img/gymsli2.jpg" alt="Chania" >
+      </div>
+    
+      <div class="item">
+        <img src="img/gymsli3.jpg" alt="Flower" >
+      </div>
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+		<div class="container">
+			<h1>Stay Fit, and join us soon.</h1>       
+  <p>We care for your health, In this era of mental strain physical strain is important too.</p>
+  <blockquote>
+    <p>Enjoy unlimited access to a unique fitness center that offers encouragement, privacy, and experienced staff committed to helping you accomplish your goals.  BPG India provides a sense of community, empowers women of all ages to take charge of their health, and inspires you to do your very best every time you come.  Join "New India's best kept secret" today and build success in your journey to health.</p>    
+  </blockquote>
+  
+  <h3>Coaches</h1>  
+  <blockquote>
+    <p>All of our coaches at BPG have been through a rigorous screening process and have met our high standards for coaching. Their coaching experience combined with their practical application of BPG in competition or in training for GPP (general physical preparedness) gives all our coaches hundreds to thousands of hours of experience.</p>    
+  </blockquote>
+
+			<a href="http://test.aurangabadkarsaraf.com/test/product/icecream-2/"> <h3>Equipment</h1>  </a>
+  <blockquote>
+    <p>We do all our work with barbells, kettlebells, boxes, wall balls, gymnastics rings and a pull-up rig. We have zero mirrors on the floor, no gym gossip, and no salesmen. If you want results and you want to be fit, strong, and healthy, we provide a fun environment that fosters all of the above. Before and after workout we encourage and foster community building in our gym lounge and mobility room. Classes are one hour long and the workout of the day is the same for the entire day. So if you miss your regular class time, you can come in later in the day and get the same workout in. You will get warmed up, work on a particular skill or strength movement, do the workout, stretch out, all in a one hour class.</p>    
+  </blockquote>
+  
+<a href="https://www.flipkart.com/">  <h3>Society</h1>   </a>
+  <blockquote>
+    <p>BPG is a great platform for building a strong and tight-knit community around something positive.  We will have a very intimate membership base and you will get to know each member and at one time or another you will get to workout with everyone.  As CrossFit Deliverance becomes a part of your daily routine, you will forge amazing friendships and be held accountable by not only your coaches, but your fellow members that you see day in and day out.  The University District already has an amazing sense of community and we want to add to it and continue to build up this already great community.</p>    
+  </blockquote>
+  
+  <h3>Calculate Your Body Mass Index</h1>  
+  <blockquote>
+    <p>Calculate Your Body Mass Index</p>
+		<ul>
+			<li>Enter your weight and height using standard or metric measures.</li>
+			<li>Select "Compute BMI" and a popup for calculating BMI will appear.</li>
+		</ul>
+		<a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onClick="dataLayer.push({
+'event': 'navigationClick',
+'actionType':'Compute BMI',
+'creativePosition':'<<dynamic>>',
+});
+">
+			<span class="glyphicon glyphicon-modal-window"></span> Compute BMI
+		</a>
+  </blockquote>
+
+  <div class="modal fade" id="myModal" role="dialog">
+		 		<div class="modal-dialog">
+	
+			<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">BMI Calculator</h4>
+						</div>
+				<div class="modal-body">
+					<form name="bmiForm">
+						<div class="form-group">						
+							<label for="weight">Your Weight(kg): </label>
+							<input type="text" class="form-control" name="weight"><br />
+						</div>
+						<div class="form-group">						
+							<label for="weight">Your Height(cm): </label>
+							<input type="text" class="form-control" name="height"><br />
+						</div>
+						<br />
+						<button type="button" class="btn btn-primary" value="Calculate BMI" onClick="calculateBmi()" id="calCulateButtonBMI">Calculate</button><br /><br/>
+						<div class="form-group">						
+							<label for="weight">Your BMI</label>
+							<input type="text" class="form-control" name="bmi"><br />
+						</div>
+						<div class="form-group">						
+							<label for="weight">This means</label>
+							<input type="text" class="form-control" name="meaning" id="BMIOutPut"><br />
+						</div>						
+						<button type="reset" class="btn btn-primary">Reset</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>											
+		</div>			
+  </div>
+  <header>
+    <nav class="navbar navbar-dark orange">
+      <span
+        style="color: white; font-size: 23px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i
+          class="fas fa-calculator"></i> Calorie Calculator</span>
+    </nav>
+  </header>
+
+  <main>
+	  <script>
+function calc() {
+    let A = document.getElementById("age").value;
+    let W = document.getElementById("weight").value;
+    let H = document.getElementById("height").value;
+    let S
+    let R
+
+
+    // input check
+    if (document.getElementById("age").value.length == 0) {
+
+        document.getElementById("ATT").style = "color: red;"
+        document.getElementById("WTT").style = "display: none;"
+        document.getElementById("HTT").style = "display: none;"
+
+        return
+
+    }
+
+    if (document.getElementById("weight").value.length == 0) {
+
+        document.getElementById("ATT").style = "display: none;"
+        document.getElementById("HTT").style = "display: none;"
+        document.getElementById("WTT").style = "color: red;"
+        
+        return
+
+    }
+
+    if (document.getElementById("height").value.length == 0) {
+
+        document.getElementById("ATT").style = "display: none;"
+        document.getElementById("WTT").style = "display: none;"
+        document.getElementById("HTT").style = "color: red;"
+        
+        return
+
+    }
+
+
+    // Basal
+    if (document.getElementById("male").checked) {
+        S =  Math.round((9.99*W)+(6.25*H)-(4.92*A)+5)
+    } else if (document.getElementById("female").checked) {
+        S =  Math.round((9.99*W)+(6.25*H)-(4.92*A)-161)
+    }
+
+    // Activity 0 (BMR)
+    if (document.getElementById("0").selected) {
+        R = S
+    }
+
+    // Activity 1
+    if (document.getElementById("1").selected) {
+        R = S*1.2
+    }
+
+    // Activity 2
+    if (document.getElementById("2").selected) {
+        R = S*1.35
+    }
+
+    // Activity 3
+    if (document.getElementById("3").selected) {
+        R = S*1.55
+    }
+    
+    // Activity 4
+    if (document.getElementById("4").selected) {
+        R = S*1.75
+    }
+
+    // Activity 5
+    if (document.getElementById("5").selected) {
+        R = S*1.95
+    }
+
+    document.getElementById("ATT").style = "display: none;"
+    document.getElementById("HTT").style = "display: none;"
+    document.getElementById("WTT").style = "display: none;"
+
+    document.getElementById("age").placeholder = " "
+    document.getElementById("weight").placeholder = "Kg"
+    document.getElementById("height").placeholder = "Cm"
+
+    document.getElementById("a").innerHTML = Math.round(R)
+
+    document.getElementById("b").innerHTML = Math.round(R*0.80)
+
+    document.getElementById("c").innerHTML = Math.round(R*1.20)
+
+    document.getElementById("Final").style = "max-width: 25rem; margin: auto; border: 6px solid orange; width: 50%; margin-top: 45px; background-color:#fff176; border-radius: 20px; color:#ff6d00; margin-bottom: 30px"
+}
+	  </script>	  
+    <p class="text-center font-weight-bold" style="margin-top: 25px; font-size: large;">Insert your data below to calculate your recommended calories intake!</p>
+    <div class="card text-center border-warning-color-dark"
+      style="max-width: 50rem; margin: auto; border: 3px solid orange; width: 50%; margin-top: 30px; min-width: 20rem;">
+
+      <table class="table" style="border-spacing: 0rem;">
+        <form>
+          <tr>
+            <td class="T">Gender</td>
+            <td class="I">
+              <input type="radio" name="gender" value="male" id="male" checked="checked"> Male &nbsp &nbsp
+              <input type="radio" name="gender" value="female" id="female"> Female
+            </td>
+          </tr>
+          <tr>
+            <td class="T">Age</td>
+            <td class="I" id="AT"><input type="number" min="0" id="age" placeholder=""
+                style="border-width: 2px; border-color: rgb(255, 123, 0); border-radius: 5px;"><div style="display: none;" id="ATT">Please enter valid number</div></td>
+          </tr>
+          <tr>
+            <td class="T">Weight</td>
+            <td class="I"><input type="number" min="0" id="weight"
+                style="border-width: 2px; border-color: rgb(255, 123, 0); border-radius: 5px;" placeholder="Kg"><div style="display: none;" id="WTT">Please enter valid number</div></td>
+          </tr>
+          <tr>
+            <td class="T">Height</td>
+            <td class="I"><input type="number" min="0" id="height"
+                style="border-width: 2px; border-color: rgb(255, 123, 0); border-radius: 5px;" placeholder="Cm"><div style="display: none;" id="HTT">Please enter valid number</div></td>
+          </tr>
+        </form>
+
+        <tr>
+          <td class="T">Exercise level<p>/Activity</p></td>
+          <td>
+            <select class="custom-select custom-select-sm"
+              style="width: 70%; margin: auto; border-width: 2px; border-color: rgb(255, 123, 0); border-radius: 5px; margin-top: 12px;"> <!--KONO DIO DA -->
+              <option value="0" id="0">Basal Metabolic Rate (BMR)</option>
+              <option value="1" id="1">Little/No exercise</option>
+              <option value="2" id="2">Low activity (exercise 1-3 times/week)</option>
+              <option value="3" id="3">Active (daily exercise or intense exercise 3-4 times/week)</option>
+              <option value="4" id="4">High activity (intense exercise 6-7 times/week)</option>
+              <option value="5" id="5">Very high activity (very intense exercise daily, or physical job)</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <!-- UwU -->
+      <button id="B" type="button" onclick="calc()" class="btn btn-amber"
+        style="width: 300px; margin: auto; margin-bottom: 25px; border-radius: 25px;">Calculate</button>
+    </div>
+
+<script>
+	.T{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+}
+
+.I {
+    width: 50%;
+}
+table {
+    border-collapse: collapse;
+}
+
+.SS {
+    font-size: x-large;
+    font-weight: 1000;
+    font-family: Comic Sans MS;
+}
+
+.CD {
+    font-weight: normal;
+    font-size: initial;
+}
+	  </script>	
+	  
+    <!-- Score -->
+    <div id="Final" class="card text-center"
+      style="max-width: 25rem; margin: auto; border: 6px solid orange; width: 50%; margin-top: 45px; background-color:#fff176; border-radius: 20px; color:#ff6d00; display: none; margin-bottom: 30px">
+      <table style="margin-top: 15px;">
+        <tr>
+          <td class="T" style="font-weight: bold;">Maintain weight <p></p>
+          </td>
+          <td><div id="a" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+        </tr>
+        <tr>
+          <td class="T" style="font-weight: bold;">Weight loss <p
+              style="font-size: small; color:#888; font-weight: lighter;">0.5 kg/week</p>
+          </td>
+          <td><div id="b" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+        </tr>
+        <tr>
+          <td class="T" style="font-weight: bold;">Weight gain <p
+              style="font-size: small; color:#888; font-weight: lighter;">0.5 kg/week</p>
+          </td>
+          <td><div id="c" class="SS">&nbsp</div><div class="CD">Calories/day</div></td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- End your project here--> <!-- By Tomasz Pęśko -->
+ 
+
+  
+  <!--footer part-->			
+			<footer style="background-color:#282829">				
+					<div align="center"><img src="img/bpg.jpg" width="90" align="center"/><br/><strong style="color:white">&copy;&nbsp; Body Power Gym</strong> </div>										
+			</footer>
+			
+			
+
+
+	
+	</body>
 </html>
